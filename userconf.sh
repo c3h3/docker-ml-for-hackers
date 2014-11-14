@@ -29,6 +29,7 @@ echo '"\e[5~": history-search-backward' >> /etc/inputrc && echo '"\e[6~": histor
 ## Let user write to /usr/local/lib/R/site.library
 addgroup $USER staff
 
-ln -s $DEMOPATH /home/$USER
+chown -R $USER $DEMOPATH
 
+ln -s $DEMOPATH /home/$USER
 
